@@ -80,4 +80,10 @@ class PancakeHouseCollectionTests: XCTestCase {
     // then
     XCTAssertFalse(collection._pancakeHouses.contains(pancakeHouse))
   }
+    
+    func testMeasureLoadDefaultPancakeHouses() {
+        measure {
+            self.collection.loadDefaultPancakeHouses()
+        }
+    }
 }
